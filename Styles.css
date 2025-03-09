@@ -41,6 +41,12 @@ a {
   font-size: 14px;
 }
 
+.intro-slide2{
+  height: 80vh;
+}
+.intro-slide2 img{
+  height: 100%;
+}
 .slideUp {
   display: inline-block;
   animation: slideUp 2s ease;
@@ -601,6 +607,11 @@ hr {
 @media only screen and (max-width: 350px) {
   .dropdownMenu {
     width: 92%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .intro-slide2 {
+    height: 50vh;
   }
 }
 @media only screen and (min-width: 700px) {
