@@ -11,10 +11,11 @@
     content:"";
     position: absolute;
     left:0;
-    top:0;
+    top:50%;
+    transform: translateY(-50%);
     width:1em;
     height: 1em;
-    background-image:url("../../Images/sun-svgrepo-com.svg");
+    background-image:url("../Product Images/Aesthetic Photos/sun-svgrepo-com.svg");
     background-position: center;
     background-size: contain;
 

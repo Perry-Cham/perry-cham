@@ -51,6 +51,7 @@ article {
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.6);
+    width: clamp(395px, 50%, 650px);
 }
 .numbers div {
     display: flex;

@@ -1,124 +1,188 @@
-:root{
-   font-family: Book Antiqua;
-  
-}
-main{
+main {
   font-size: 14px;
-  font-family: Open sans;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-
-main li{
+main li {
   list-style: circle;
 }
-h3{
+h3 {
   margin: 0;
   padding: 10px;
   color: white;
   background-color: red;
   text-align: center;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 3px 8px  #000000cd;
+  box-shadow: 3px 3px 8px #000000cd;
 }
 
-.list{
-  display: flex; 
+.list {
+  display: flex;
   flex-direction: column;
-  gap:5px;
+  gap: 5px;
 }
-section{
-  padding:8px 10px; 
+section {
+  padding: 8px 10px;
   text-align: justify;
   margin: 10px 0;
 }
-.retail p{
+.retail p {
   word-spacing: 3px;
   line-height: 1.4em;
 }
+/* INTRO */
+.intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1;
+}
+.intro-img {
+  grid-column: 1;
+}
+.intro-img h2 {
+  display: none;
+}
+.intro-content {
+  grid-column: 2;
+}
+.intro img {
+  display: block;
+  width: 95%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
 /* MISSION */
-.mission h3{
+.mission h3 {
   color: white;
 }
-.values h3{
+.values h3 {
   background-color: yellow;
   color: black;
 }
 
 /* MARKET */
-.market article{
+.market article {
   margin-bottom: 20px;
 }
-.market h3{
+.market h3 {
   padding-bottom: 5px;
   padding-left: 0;
   display: block;
   text-align: left;
   background-color: initial;
   box-shadow: initial;
-  color:red;
-}
-/* The Team */
-.theTeam{
-  margin-bottom: 50px;
-}
-.theTeam article{
-  margin-bottom: 4rem;
-}
-.market p:not(last-child){
-  margin-top: 5px;
+  color: red;
 }
 /* MANAGEMENT */
-.theTeam img{
-  width: 45%;
-  height: auto;
-  float: left;
-  margin-right: 5px;
+.theTeam {
+  margin-bottom: 50px;
 }
-/* INTRO */
-.intro img{
-  display: block;
-  width:100%;
-  max-width: 538px;
-  height: auto;
-  margin: auto;
-  margin-bottom: 5px;
-  border-radius:5px;
+.theTeam article {
+  margin-bottom: 4rem;
+}
+.market p:not(last-child) {
+  margin-top: 5px;
 }
 
-@media only screen and (min-width: 550px){
-  .intro img{
+.theTeam img:not(.card-wave-image) {
+  width: 55%;
+  height: auto;
+border-radius: 50%;
+}
+.team-card{
+  display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+}
+.card-image{
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card-wave-image{
+  position:absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  object-fit: cover;
+  width: 95%;
+  height:auto;
+  border-radius:0 5px 10px 10px;
+}
+.card-content{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+@media only screen and (max-width: 550px) {
+  .intro {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: auto;
+  }
+  .intro-img {
+    grid-row: 1;
+    grid-column: 1;
+    /* overflow: hidden; */
+  }
+  .intro-img h2 {
+    display: block;
+  }
+  .intro-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .intro-content h2 {
+    display: none;
+  }
+  .intro img {
+    display: block;
+    max-width: 538px;
+    /*   margin: auto; */
+    margin-bottom: 5px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .intro img {
     margin: 0;
     margin-bottom: 5px;
   }
-  p{
+  p {
     max-width: 600px;
   }
-  section{
-    font-size:clamp(14px, 5vh, 18px);
+  section {
+    font-size: clamp(14px, 5vh, 18px);
     margin-bottom: 30px;
   }
-
 }
 
 /* SUBMENU STYLES */
-.dropdownMenu{
-  color:white;
+.dropdownMenu {
+  color: white;
 }
-.subMenu{
- padding:0;
- align-items: center;
- justify-content: space-around;
- flex-direction: column;
- display: none;
+.subMenu {
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  display: none;
 }
-.subMenu li{
+.subMenu li {
   list-style: none;
   color: white;
 }
