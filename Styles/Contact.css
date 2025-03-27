@@ -1,84 +1,138 @@
-.heading {
-    padding-left: 5px;
+body{
+font-size: 14px;
+--font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-#reg h4 {
-    background-color: red;
-    color: white;
-    margin: 11px 0;
-    padding: 10px 0;
-    text-align: center;
+.heading {
+padding-left: 5px;
+}
+.registration p{
+text-align: justify;
+}
+.registration h4 {
+background-color: red;
+color: white;
+margin: 11px 0;
+padding: 10px 0;
+text-align: center;
 }
 
-article {
-    padding-left: 5px;
-    padding-right: 10px;
-    margin-bottom: 30px;
+article, section {
+padding-left: 5px;
+padding-right: 10px;
+margin-bottom: 30px;
 }
 
 #reg p {
-    font-size: 14;
-    text-align: justify;
+text-align: justify;
 }
 
 .bank {
-    display: flex;
-    font-size: 14px;
+display: flex;
 }
 
 .bank div {
-    flex-grow: 1;
+flex-grow: 1;
 }
 
 .labels,
 .labels p {
-    font-weight: 500;
+font-weight: 500;
 }
 
 /* Numbers */
 #numbers {
-    padding: 10px 0px;
-    margin-bottom: 10px;
+padding: 10px 0px;
+margin-bottom: 10px;
+
 }
 
 .numbers {
-    /* background-color: #fffa2bf2; */
-    font-size: 14px;
-    background-color: red;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.6);
-    width: clamp(395px, 50%, 650px);
+/* background-color: #fffa2bf2; */
+font-size: 14px;
+background-color: red;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+margin: 0 10px;
+border-radius: 10px;
+box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.6);
+width: clamp(310px, 50%, 650px);
 }
 .numbers div {
-    display: flex;
+display: flex;
 }
 .subHeading {
-    padding: 0;
-    margin: 0;
+padding: 0;
+margin: 0;
 }
 .label.contact {
-    font-weight: 570;
+font-weight: 570;
 }
 .phoneNumber {
-    font-weight: 500;
+font-weight: 500;
 }
 
 .email {
-    padding-left: 20px;
-    font-weight: 500;
+padding-left: 20px;
+font-weight: 500;
 }
 
 h4 {
-    margin-left: 5px;
-    margin-right: 10px;
-    background-color: red;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-bottom: 11px;
+/*margin-left: 5px;
+margin-right: 10px;*/
+background-color: red;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+margin-bottom: 11px;
+}
+.form{
+box-shadow: 5px 5px 15px hsla(0,0%,0%, 0.5);
+border-radius: 10px;
+width: clamp(280px, 80%, 450px);
+padding: 1rem;
+margin: auto;
+}
+.form-label{
+font-weight: 450;
+}
+.form-input{
+display: block;
+margin: 0.75rem 0 1rem 0;
+padding: .25rem;
+border: none;
+border-bottom: solid 1px black;
+width: 80%;
+padding-left: 0;
+transition: all .2s;
+}
+.form-input:focus{
+outline: none;
+border-bottom-color: red;
+border-bottom-width: 2px;
+
+}
+.form textarea{
+font-family: var(--font-stack);
+min-height: 3rem;
+}
+.form-button{
+border: solid 2px red;
+border-radius: 5px;
+background-color: white;
+font-size: 15px;
+padding: 0.35rem 0.5rem;
+width: 30%;
+text-align: center;
+font-weight: 475;
+transition: all .25s;
+}
+.form-button:hover{
+background-color: red;
+color: white;
+}
+@media only screen and (max-width:450px){
+
 }
