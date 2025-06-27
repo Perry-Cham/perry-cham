@@ -33,9 +33,25 @@ const dropdown = document.querySelector(".dropdown")
     })
 
 
-
-
-
+//Slider Animations 
+//First Slide
+const brand =  document.querySelector(".brand");
+const heading = document.querySelector("#placeholder h3");
+const second = document.querySelector(".second")
+const sliderbtn = document.querySelector("#placeholder a")
+heading.addEventListener("animationend", () => {
+        second.style.opacity = "1";
+        second.classList.add("slideIn")
+} )
+ second.addEventListener("animationend", () => {
+        brand.style.opacity = "1";
+        brand.classList.add("fadeInDown")
+} )
+brand.addEventListener("animationend", () => {
+        sliderbtn.style.opacity = "1";
+        sliderbtn.classList.add("slideUp")
+} )
+//Second Slide
 
 
 //THTREE BOXES
@@ -77,22 +93,7 @@ boxes[0].addEventListener("click", () => {
     
   } )
  
-const brand =  document.querySelector(".brand");
-const heading = document.querySelector("#placeholder h3");
-const second = document.querySelector(".second")
-const sliderbtn = document.querySelector("#placeholder a")
-heading.addEventListener("animationend", () => {
-        second.style.opacity = "1";
-        second.classList.add("slideIn")
-} )
- second.addEventListener("animationend", () => {
-        brand.style.opacity = "1";
-        brand.classList.add("fadeInDown")
-} )
-brand.addEventListener("animationend", () => {
-        sliderbtn.style.opacity = "1";
-        sliderbtn.classList.add("slideUp")
-} )
+
  
   
 
@@ -100,7 +101,7 @@ brand.addEventListener("animationend", () => {
  
  
  
-  //INTERSECTION OBSERVER
+  //INTERSECTION OBSERVERS
   const observer = new IntersectionObserver((entries) =>
     {(entries).forEach((entry) => {
       if(entry.isIntersecting){
@@ -108,7 +109,12 @@ brand.addEventListener("animationend", () => {
       }
     }
   )})
-  
+  const observer2 = new IntersectionObserver((entries) => {
+    (entries.forEach(entry => {
+      if(entry.isIntersecting)entry.target.classList.add("slideUp")
+    }))
+  })
   const aboutDivs = document.querySelectorAll("#aboutInfo div")
   aboutDivs.forEach((el) => observer.observe(el))
-  
+  const secondSlide = document.querySelector(".second-slide")
+  observer2.observe(secondSlide)
