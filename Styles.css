@@ -73,6 +73,12 @@ header buttons {
 z-index: 0;
 }
 
+#logo {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 #logo h2 {
 margin: revert;
 display: inline-block;
@@ -591,6 +597,9 @@ z-index: 5;
 cursor: pointer;
 position: relative;
 }
+#order a{
+  color:white;
+}
 #order h2::before {
 content: "";
 position: absolute;
@@ -639,6 +648,10 @@ margin: auto;
 
 #socials i {
 font-size: 18px;
+}
+#socials a{
+  color:white;
+  font-size:18px;
 }
 hr {
 height: 2px;
@@ -726,11 +739,7 @@ font-size: 19px;
 #logo h2 {
 margin: 0;
 }
-#logo {
-display: flex;
-align-items: center;
-justify-content: center;
-}
+
 header {
 min-height: 72px;
 background-color: hsl(0, 100%, 50%);
