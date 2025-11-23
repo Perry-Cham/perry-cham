@@ -1,3 +1,2 @@
-- ##PREMIER MEATS WEBSITE (*Just for testing Not exactly real*)
-- A website I built just for the fun of it out of information from a printed company profile.
-- I'm quite proud of it but tell me what you think
+## PREMIER MEATS WEBSITE DEMO
+A static website that I built to test out my web development skills. It uses standard HTML,CSS and javascript. Please tell me what you think and areas I can improve upon.
